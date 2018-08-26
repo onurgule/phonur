@@ -26,3 +26,4 @@ phonur("5312345678","90") // return ['+905312345678', '90', 'TR']
 
 ## Credits
 Onur Osman Gule [onurgule]
+with package "phone"
