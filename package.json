@@ -1,0 +1,52 @@
+{
+	"name": "phonur",
+	"version": "1.0.0",
+	"description": "Get format of phone number with number and country code.",
+	"main": "./dist/index.js",
+	"engines": {
+		"node": ">=6.10.0"
+	},
+	"directories": {
+		"lib": "./lib"
+	},
+	"scripts": {
+		"test": "jest && codecov",
+		"lint": "eslint .",
+		"build": "webpack --hide-modules --progress",
+		"start:example": "yarn build && webpack-dev-server --config ./example/webpack.config.js --progress",
+		"prepublishOnly": "yarn build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/onurgule/phonur"
+	},
+	"bugs": {
+		"url": "https://github.com/onurgule/phonur/issues"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-loader": "^7.1.5",
+		"babel-minify-webpack-plugin": "^0.2.0",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"codecov": "^2.3.1",
+		"eslint": "^4.5.0",
+		"eslint-config-aftership": "^4.5.0",
+		"eslint-plugin-import": "^2.13.0",
+		"jest": "^23.3.0",
+		"webpack": "^3.5.5",
+		"webpack-dev-server": "^2.9.1"
+	},
+	"keywords": [
+		"phone",
+		"phonur",
+		"country",
+		"countrycode"
+	],
+	"author": "Onurgule",
+	"license": "MIT",
+	"jest": {
+		"coverageDirectory": "./coverage/",
+		"collectCoverage": true
+	}
+}
