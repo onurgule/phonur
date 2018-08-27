@@ -1,6 +1,6 @@
 {
 	"name": "phonur",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Get format of phone number with number and country code.",
 	"main": "./dist/index.js",
 	"engines": {
